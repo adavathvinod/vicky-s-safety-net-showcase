@@ -1,0 +1,392 @@
+import Layout from "@/components/Layout";
+import ParallaxSection from "@/components/ParallaxSection";
+import EnquiryBar from "@/components/EnquiryBar";
+import { useParams } from "react-router-dom";
+
+import balconyNets from "@/assets/balcony-nets.jpg";
+import pigeonNets from "@/assets/pigeon-nets.jpg";
+import cricketNets from "@/assets/cricket-nets.jpg";
+import buildingNets from "@/assets/building-nets.jpg";
+import industrialNets from "@/assets/industrial-nets.jpg";
+import staircaseNets from "@/assets/staircase-nets.jpg";
+import swimmingPoolNets from "@/assets/swimming-pool-nets.jpg";
+import carParkingNets from "@/assets/car-parking-nets.jpg";
+import coconutNets from "@/assets/coconut-nets.jpg";
+import birdSpikes from "@/assets/bird-spikes.jpg";
+import sportsNets from "@/assets/sports-nets.jpg";
+import parallaxBg from "@/assets/parallax-bg.jpg";
+
+interface ServiceInfo {
+  title: string;
+  image: string;
+  description: string[];
+  features: string[];
+}
+
+const serviceData: Record<string, ServiceInfo> = {
+  "balcony": {
+    title: "Balcony Safety Nets in Bangalore",
+    image: balconyNets,
+    description: [
+      "Vicky Safety Nets provides premium quality balcony safety nets installation services across Bangalore. Our balcony safety nets are made from high-grade nylon and HDPE material that is UV-resistant, weather-proof, and highly durable.",
+      "Living in a high-rise apartment comes with the risk of accidental falls from balconies, especially for children and pets. Our safety nets act as an invisible shield that provides complete protection without blocking your view or ventilation.",
+      "We offer free site inspection and same-day installation service. Our experienced team ensures perfect fitting with minimal drilling and no damage to your property."
+    ],
+    features: ["UV-resistant nylon material", "Free installation", "Custom sizes available", "5+ years durability", "Transparent & invisible look", "Same day service"]
+  },
+  "kids": {
+    title: "Kids Safety Nets for Balcony in Bangalore",
+    image: balconyNets,
+    description: [
+      "Protect your children from balcony falls with our specially designed kids safety nets. These nets feature a smaller mesh size that ensures children cannot pass through or get stuck.",
+      "Every year, numerous accidents occur due to children falling from balconies. Our kids safety nets provide reliable protection that gives parents peace of mind.",
+      "The nets are made from soft, non-abrasive material that won't harm children if they come in contact with it. Available in various colors to match your home decor."
+    ],
+    features: ["Small mesh size for child safety", "Soft non-abrasive material", "Tested for weight bearing", "Custom fitting", "Available in multiple colors", "Child-proof installation"]
+  },
+  "pets": {
+    title: "Pets Safety Nets in Bangalore",
+    image: balconyNets,
+    description: [
+      "Keep your beloved pets safe with our durable pet safety nets for balconies and windows. Cats, dogs, and other pets are at risk of falling from open balconies.",
+      "Our pet safety nets are made from strong nylon material that pets cannot bite through or tear. The mesh size is designed to prevent even small pets from squeezing through.",
+      "We provide custom installation for all types of balconies and windows, ensuring complete coverage and protection for your pets."
+    ],
+    features: ["Bite-resistant material", "Small mesh for all pet sizes", "Balcony & window coverage", "Durable nylon nets", "Custom fitting", "Pet-friendly installation"]
+  },
+  "grill-balcony": {
+    title: "Grill Balcony Safety Nets in Bangalore",
+    image: balconyNets,
+    description: [
+      "Even grilled balconies need additional safety nets, especially when the grill gaps are wide enough for children or objects to pass through.",
+      "Our grill balcony safety nets are designed to fit perfectly on existing grills without any structural modifications. We use specialized clips and fasteners for secure attachment.",
+      "The transparent nylon nets blend seamlessly with your existing grills, providing invisible yet effective protection."
+    ],
+    features: ["Fits on existing grills", "No structural changes needed", "Transparent appearance", "Clip-on installation", "Weather resistant", "Custom measurement"]
+  },
+  "terrace": {
+    title: "Terrace Top Safety Nets in Bangalore",
+    image: buildingNets,
+    description: [
+      "Cover your terrace with high-quality safety nets from Vicky Safety Nets. Terrace top nets prevent accidental falls and keep your terrace area safe for all activities.",
+      "Our terrace nets are ideal for residential buildings, schools, and commercial properties. They provide protection from falls while allowing sunlight and air to pass through.",
+      "We use heavy-duty nylon nets with steel cable support for large terrace areas, ensuring the nets remain taut and effective in all weather conditions."
+    ],
+    features: ["Heavy-duty nylon material", "Steel cable support", "Large area coverage", "Weather proof", "Allows light & air", "Professional installation"]
+  },
+  "industrial": {
+    title: "Industrial Safety Nets in Bangalore",
+    image: industrialNets,
+    description: [
+      "Vicky Safety Nets provides industrial-grade safety nets for factories, warehouses, and manufacturing units. Our nets meet all safety standards and regulations.",
+      "Industrial safety nets are essential for preventing worker falls, catching debris, and creating safe working zones. We offer nets in various strengths and specifications.",
+      "Our team has experience in installing safety nets in large industrial complexes and can handle projects of any scale."
+    ],
+    features: ["Meets safety regulations", "Heavy-duty construction", "Custom specifications", "Debris catching nets", "Fall protection", "Large-scale installation"]
+  },
+  "building": {
+    title: "Building Safety Nets in Bangalore",
+    image: buildingNets,
+    description: [
+      "Complete building safety net solutions for residential complexes, commercial buildings, and high-rise structures. Our nets prevent falls from heights and protect both residents and pedestrians.",
+      "We install safety nets around the entire building perimeter, duct areas, open shafts, and common areas. Our nets are designed to withstand heavy loads and extreme weather.",
+      "Building safety nets are now mandatory in many residential complexes. Vicky Safety Nets provides compliant installation with proper documentation."
+    ],
+    features: ["Full building coverage", "Heavy load capacity", "Compliance documentation", "Perimeter protection", "Duct area coverage", "Long-lasting material"]
+  },
+  "duct-area": {
+    title: "Duct Area Safety Nets in Bangalore",
+    image: balconyNets,
+    description: [
+      "Duct areas in buildings are common accident spots. Our duct area safety nets prevent accidental falls and keep these areas safe for maintenance workers.",
+      "We provide custom-fit nets for duct areas of all sizes and shapes. Our team measures each duct area precisely to ensure complete coverage.",
+      "The nets are installed with heavy-duty fasteners and can support significant weight, providing reliable protection in these critical areas."
+    ],
+    features: ["Custom duct area fitting", "Heavy-duty fasteners", "Weight-bearing capacity", "All shapes covered", "Maintenance-friendly", "Quick installation"]
+  },
+  "open-area": {
+    title: "Open Area Safety Nets in Bangalore",
+    image: balconyNets,
+    description: [
+      "Protect open areas in buildings, complexes, and public spaces with our durable safety nets. Open areas like courtyards, light wells, and gaps between buildings need protection.",
+      "Our open area nets are made from heavy-gauge nylon that can cover large spans. We use cable systems to support nets across wide areas.",
+      "Whether it's a residential complex or a commercial property, we provide customized solutions for all types of open areas."
+    ],
+    features: ["Large span coverage", "Cable support system", "Heavy-gauge nylon", "All property types", "Custom solutions", "Professional team"]
+  },
+  "staircase": {
+    title: "Staircase Safety Nets in Bangalore",
+    image: staircaseNets,
+    description: [
+      "Staircase safety nets prevent children and pets from falling through staircase gaps and railings. Essential for homes with young children.",
+      "Our staircase nets are easy to install on all types of railings including wooden, metal, and glass. We use transparent nets that don't affect the look of your staircase.",
+      "The nets are made from soft, child-safe material and can be easily removed when no longer needed."
+    ],
+    features: ["Child-safe material", "Fits all railing types", "Transparent design", "Easy removal", "Quick installation", "No damage to railings"]
+  },
+  "construction": {
+    title: "Construction Safety Nets in Bangalore",
+    image: buildingNets,
+    description: [
+      "Construction safety nets are mandatory at construction sites to prevent falls and catch debris. Vicky Safety Nets provides government-compliant construction safety nets.",
+      "We offer debris nets, scaffold nets, fall arrest nets, and perimeter safety nets for construction sites of all sizes.",
+      "Our construction nets meet IS standards and come with quality certification. We also provide installation and removal services."
+    ],
+    features: ["Government compliant", "IS standard certified", "Debris & fall nets", "Scaffold safety", "Installation & removal", "All site sizes"]
+  },
+  "swimming-pool": {
+    title: "Swimming Pool Safety Nets in Bangalore",
+    image: swimmingPoolNets,
+    description: [
+      "Swimming pool safety nets prevent accidental drowning, especially for children and pets. Our pool nets are strong enough to hold the weight of a child if they accidentally walk onto it.",
+      "We provide custom-fit nets for pools of all shapes and sizes. The nets can be easily removed for swimming and re-installed quickly.",
+      "Our pool safety nets are made from chlorine-resistant material that doesn't degrade from pool water exposure."
+    ],
+    features: ["Supports child weight", "Chlorine resistant", "Custom pool shapes", "Easy removal/install", "UV resistant", "Strong fastening system"]
+  },
+  "monkey": {
+    title: "Monkey Net for Balconies in Bangalore",
+    image: balconyNets,
+    description: [
+      "Monkey-proof safety nets for balconies in areas prone to monkey intrusion. Our nets are made from extra-strong material that monkeys cannot tear or bite through.",
+      "Monkeys can cause significant damage to homes and are a safety concern for residents. Our monkey nets provide a reliable barrier while being humane.",
+      "We use thicker nylon nets with reinforced edges for monkey protection. The nets are tested for strength and durability."
+    ],
+    features: ["Extra-strong material", "Tear resistant", "Bite proof", "Reinforced edges", "Humane protection", "Durable installation"]
+  },
+  "car-parking": {
+    title: "Car Parking Safety Nets in Bangalore",
+    image: carParkingNets,
+    description: [
+      "HDPE shade nets for car parking areas provide protection from sun, rain, and falling objects. Keep your vehicles safe from harsh weather and debris.",
+      "Our car parking nets are available in various shade percentages (50%, 75%, 90%) to suit your requirements. They significantly reduce heat inside parked vehicles.",
+      "We provide installation for individual parking spots, entire parking lots, and commercial parking areas."
+    ],
+    features: ["Various shade percentages", "UV protection", "Rain protection", "Reduces vehicle heat", "All parking sizes", "Durable HDPE material"]
+  },
+  "coconut-tree": {
+    title: "Coconut Tree Safety Nets in Bangalore",
+    image: coconutNets,
+    description: [
+      "Coconut tree safety nets catch falling coconuts and prevent injuries to people below. Essential for residential areas, temples, and public spaces with coconut trees.",
+      "Our coconut tree nets are made from heavy-duty material that can withstand the impact of falling coconuts. They are designed to catch coconuts safely without damaging them.",
+      "We provide professional installation around the tree canopy with proper support structures."
+    ],
+    features: ["Impact resistant", "Catches coconuts safely", "Heavy-duty material", "Professional installation", "All tree sizes", "Weather resistant"]
+  },
+  "hdpe-nylon": {
+    title: "HDPE & Nylon Nets in Bangalore",
+    image: industrialNets,
+    description: [
+      "We supply high-quality HDPE and Nylon nets for various applications. Available in different mesh sizes, colors, and specifications.",
+      "Our nets are sourced from top manufacturers and undergo quality testing before delivery. Bulk orders available at wholesale prices.",
+      "Whether you need nets for safety, agriculture, sports, or industrial use, we have the right product for you."
+    ],
+    features: ["Multiple mesh sizes", "Various colors", "Quality tested", "Bulk orders available", "Wholesale prices", "All applications"]
+  },
+  "pigeon-nets": {
+    title: "Pigeon Nets in Bangalore",
+    image: pigeonNets,
+    description: [
+      "High-quality pigeon nets to prevent pigeons from entering your balcony, window, or terrace. Our pigeon nets are made from durable nylon material that is UV-resistant.",
+      "Pigeons cause property damage with their droppings, nesting materials, and can spread diseases. Our pigeon nets provide a humane way to keep them away.",
+      "We offer transparent and colored pigeon nets that blend with your building's appearance. Professional installation with free site inspection."
+    ],
+    features: ["UV-resistant nylon", "Transparent options", "Humane bird control", "Free site inspection", "Custom sizes", "Quick installation"]
+  },
+  "pigeon-safety": {
+    title: "Pigeon Safety Nets in Bangalore",
+    image: pigeonNets,
+    description: [
+      "Complete pigeon safety net solutions for residential apartments and commercial buildings. Stop pigeons from nesting and dirtying your property.",
+      "Our pigeon safety nets cover balconies, windows, terraces, and any open areas where pigeons tend to enter. The nets are virtually invisible from a distance.",
+      "We have installed pigeon safety nets in thousands of apartments across Bangalore with 100% customer satisfaction."
+    ],
+    features: ["Complete area coverage", "Virtually invisible", "Thousands installed", "100% satisfaction", "All building types", "Warranty included"]
+  },
+  "pigeon-installation": {
+    title: "Pigeon Nets Installation in Bangalore",
+    image: pigeonNets,
+    description: [
+      "Professional pigeon net installation service by trained experts. We ensure perfect fitting and secure installation for lasting protection.",
+      "Our installation process includes free site visit, measurement, custom cutting, and professional fixing. We use high-quality clips and fasteners for secure attachment.",
+      "Same-day installation available. We handle all types of buildings including high-rises with our experienced team."
+    ],
+    features: ["Free site visit", "Same-day service", "Expert installation", "High-rise experience", "Quality fasteners", "Clean installation"]
+  },
+  "bird-spikes": {
+    title: "Bird Spikes in Bangalore",
+    image: birdSpikes,
+    description: [
+      "Stainless steel bird spikes for ledges, parapets, window sills, and AC units. A humane bird deterrent that prevents birds from perching and nesting.",
+      "Bird spikes are the most effective solution for keeping birds off specific surfaces. They don't harm birds but simply prevent them from landing.",
+      "Our bird spikes are made from high-grade stainless steel that doesn't rust or corrode. Available in polycarbonate base for easy installation."
+    ],
+    features: ["Stainless steel", "Humane deterrent", "Rust-proof", "Easy installation", "All surfaces", "Long-lasting"]
+  },
+  "bird-protection": {
+    title: "Bird Protection Nets in Bangalore",
+    image: pigeonNets,
+    description: [
+      "Comprehensive bird protection net solutions for all types of buildings. Our nets keep all species of birds away without harming them.",
+      "Bird protection nets are essential for food processing units, warehouses, hospitals, and residential buildings where bird intrusion causes hygiene issues.",
+      "We provide customized bird protection solutions based on the specific bird problem and building structure."
+    ],
+    features: ["All bird species", "Food-grade available", "Custom solutions", "Hygiene compliant", "All building types", "Expert consultation"]
+  },
+  "anti-bird": {
+    title: "Anti Bird Nets in Bangalore",
+    image: pigeonNets,
+    description: [
+      "Anti-bird nets for commercial and residential properties. Effective solution to prevent birds from entering and damaging your property.",
+      "Our anti-bird nets are available in various mesh sizes suitable for different bird species. Fine mesh for sparrows and larger mesh for pigeons and crows.",
+      "Food-grade anti-bird nets available for food processing areas, restaurants, and commercial kitchens."
+    ],
+    features: ["Various mesh sizes", "Species-specific", "Food-grade options", "Commercial grade", "UV resistant", "Custom installation"]
+  },
+  "pigeon-balconies": {
+    title: "Pigeon Nets for Balconies in Bangalore",
+    image: pigeonNets,
+    description: [
+      "Custom-fit pigeon nets specifically designed for balcony spaces. Available in transparent and colored options to match your home decor.",
+      "Our balcony pigeon nets are designed to provide maximum protection while maintaining the aesthetic appeal of your balcony.",
+      "We install pigeon nets on all types of balconies including open balconies, grilled balconies, and covered balconies."
+    ],
+    features: ["Custom balcony fitting", "Transparent options", "Aesthetic design", "All balcony types", "Quick installation", "Durable material"]
+  },
+  "sparrow": {
+    title: "Sparrow Protection Nets in Bangalore",
+    image: pigeonNets,
+    description: [
+      "Fine mesh sparrow protection nets to prevent small birds from entering homes and offices. Smaller mesh size compared to regular pigeon nets.",
+      "Sparrows can enter through very small gaps and build nests inside homes, causing mess and hygiene issues. Our fine mesh nets prevent even the smallest birds from entering.",
+      "Available in transparent material that doesn't block light or ventilation while providing complete sparrow protection."
+    ],
+    features: ["Extra fine mesh", "Sparrow-proof", "Transparent material", "Light & air flow", "All gap sizes", "Expert fitting"]
+  },
+  "anti-seagull": {
+    title: "Anti Seagull Nets in Bangalore",
+    image: pigeonNets,
+    description: [
+      "Heavy-duty anti-seagull nets for coastal properties and commercial areas. Our nets are designed to withstand the larger size and strength of seagulls.",
+      "Seagulls can be aggressive and cause significant property damage. Our anti-seagull nets provide effective protection for rooftops, terraces, and outdoor dining areas.",
+      "The nets are made from salt-water resistant material suitable for coastal environments."
+    ],
+    features: ["Heavy-duty material", "Salt-water resistant", "Large bird proof", "Rooftop coverage", "Outdoor dining protection", "Coastal grade"]
+  },
+  "cricket": {
+    title: "Cricket Practice Nets in Bangalore",
+    image: cricketNets,
+    description: [
+      "Professional cricket practice net enclosures for terraces, grounds, and cricket academies. Our nets are made from heavy-duty green nylon with metal frame structure.",
+      "Practice cricket safely on your building terrace or ground with our custom-built practice net setups. We provide complete solutions including net, frame, and installation.",
+      "Our cricket nets are used by several cricket academies and sports clubs across Bangalore."
+    ],
+    features: ["Heavy-duty nylon", "Metal frame included", "Terrace installation", "Academy grade", "Custom sizes", "Professional setup"]
+  },
+  "ball-stop": {
+    title: "Sports Ball Stop Nets in Bangalore",
+    image: sportsNets,
+    description: [
+      "Tall ball stop netting for sports grounds, stadiums, and residential areas near sports facilities. Prevents balls from leaving the playing area.",
+      "Our ball stop nets are available in heights up to 40 feet and can cover large perimeter areas. Made from heavy-duty nylon that can withstand powerful ball impacts.",
+      "We provide installation with steel poles and cable systems for maximum stability."
+    ],
+    features: ["Up to 40ft height", "Heavy impact resistance", "Steel pole support", "Cable system", "Large area coverage", "All sports"]
+  },
+  "football": {
+    title: "Football Stop Netting in Bangalore",
+    image: sportsNets,
+    description: [
+      "Goal nets and perimeter netting for football fields. Our football nets are made from high-strength material that can withstand powerful shots.",
+      "We provide goal nets in standard and custom sizes, as well as perimeter netting for full-size and mini football fields.",
+      "Our nets are used by several football clubs and schools across Bangalore."
+    ],
+    features: ["Goal nets available", "Perimeter netting", "High-strength material", "Standard & custom sizes", "Club grade quality", "Professional installation"]
+  },
+  "terrace-cricket": {
+    title: "Terrace Cricket Nets in Bangalore",
+    image: cricketNets,
+    description: [
+      "Custom terrace cricket net installations for residential buildings. Practice cricket safely on your building terrace without worrying about balls flying off.",
+      "Our terrace cricket nets include a complete enclosure with roof coverage, side netting, and a practice pitch area. Made from durable green nylon.",
+      "We design the enclosure based on your terrace dimensions and install it with proper structural support."
+    ],
+    features: ["Complete enclosure", "Roof coverage", "Custom dimensions", "Structural support", "Durable nylon", "Safe practice"]
+  },
+  "installation": {
+    title: "Sports Nets Installation in Bangalore",
+    image: sportsNets,
+    description: [
+      "Complete sports net installation services for schools, academies, residential complexes, and commercial sports facilities.",
+      "We handle all aspects of sports net installation from measurement and material selection to frame construction and net fixing.",
+      "Our team has extensive experience in large-scale sports net projects and can handle installations of any complexity."
+    ],
+    features: ["Complete service", "All sports types", "Large-scale projects", "Schools & academies", "Frame construction", "Expert team"]
+  },
+  "all": {
+    title: "All Sports Nets in Bangalore",
+    image: sportsNets,
+    description: [
+      "Nets for cricket, football, badminton, volleyball, tennis, throwball, and all other sports. Custom sizes and specifications available.",
+      "Whether you need a small backyard practice net or a full stadium installation, Vicky Safety Nets has the right solution for you.",
+      "We source our sports nets from premium manufacturers and guarantee quality and durability."
+    ],
+    features: ["All sports covered", "Custom specifications", "Premium quality", "Backyard to stadium", "Competitive pricing", "Quality guarantee"]
+  },
+};
+
+const ServiceDetail = () => {
+  const { type } = useParams<{ type: string }>();
+  const service = serviceData[type || ""] || serviceData["balcony"];
+
+  return (
+    <Layout>
+      <ParallaxSection backgroundImage={parallaxBg}>
+        <div className="container text-center">
+          <h1 className="text-3xl md:text-5xl font-heading font-bold text-cta mb-4">{service.title}</h1>
+          <p className="text-background/80 text-lg">Professional Installation by Vicky Safety Nets</p>
+        </div>
+      </ParallaxSection>
+
+      <section className="py-16 bg-background">
+        <div className="container max-w-5xl">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            <div>
+              <img src={service.image} alt={service.title} className="w-full h-80 object-cover rounded-lg shadow-xl" />
+              <div className="mt-6 bg-primary text-primary-foreground p-6 rounded-lg">
+                <h3 className="font-heading font-bold text-xl mb-4">Key Features</h3>
+                <ul className="grid grid-cols-2 gap-2">
+                  {service.features.map((f) => (
+                    <li key={f} className="flex items-center gap-2 text-sm">
+                      <span className="text-cta">✓</span> {f}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+            <div>
+              {service.description.map((p, i) => (
+                <p key={i} className="text-muted-foreground leading-relaxed mb-4">{p}</p>
+              ))}
+              <div className="bg-muted p-6 rounded-lg mt-6">
+                <h3 className="font-heading font-bold text-xl text-primary mb-4">Get Free Quote</h3>
+                <p className="text-muted-foreground mb-4">Contact us today for a free site inspection and installation quote.</p>
+                <div className="space-y-3">
+                  <a href="tel:7795891177" className="cta-button block text-center">Call Now: +91 7795891177</a>
+                  <a href="mailto:vickysafetynets552@gmail.com" className="block text-center bg-primary text-primary-foreground px-4 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                    Email Us
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <EnquiryBar />
+    </Layout>
+  );
+};
+
+export default ServiceDetail;

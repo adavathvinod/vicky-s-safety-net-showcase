@@ -84,11 +84,14 @@ const serviceData: Record<string, ServiceInfo> = {
     title: "Industrial Safety Nets in Bangalore",
     image: industrialNets,
     description: [
-      "Vicky Safety Nets provides industrial-grade safety nets for factories, warehouses, and manufacturing units. Our nets meet all safety standards and regulations.",
-      "Industrial safety nets are essential for preventing worker falls, catching debris, and creating safe working zones. We offer nets in various strengths and specifications.",
-      "Our team has experience in installing safety nets in large industrial complexes and can handle projects of any scale."
+      "Industrial Safety Nets Are Heavy-Duty Protective Systems Used In Construction Sites, Factories, And Warehouses To Prevent Accidents And Ensure Worker Safety. These nets are designed to handle high impact and provide maximum protection.",
+      "The main purpose of industrial safety nets is accident prevention. In high-risk environments, workers are exposed to dangers such as falling from heights or being hit by falling objects. Safety nets act as a reliable protective layer.",
+      "These nets are manufactured using high-strength materials capable of handling heavy loads and harsh conditions. They comply with safety standards and regulations.",
+      "Additionally, industrial safety nets improve productivity by creating a safer working environment. Workers can perform their tasks with confidence, reducing stress and risk.",
+      "Installation is carried out by trained professionals to ensure proper support and durability. The nets are designed to last long even in extreme environments.",
+      "In conclusion, industrial safety nets are essential for workplace safety, reducing risks, ensuring compliance, and protecting workers effectively."
     ],
-    features: ["Meets safety regulations", "Heavy-duty construction", "Custom specifications", "Debris catching nets", "Fall protection", "Large-scale installation"]
+    features: ["High-impact resistance", "Safety compliant", "Improves productivity", "Professional installation", "Extreme durability", "All industrial spaces"]
   },
   "building": {
     title: "Building Safety Nets in Bangalore",

@@ -80,7 +80,7 @@ const serviceData: Record<string, ServiceInfo> = {
   },
   "terrace": {
     title: "Terrace Top Safety Nets in Bangalore",
-    image: buildingNets,
+    image: terraceTopNew,
     description: [
       "Cover your terrace with high-quality safety nets from Vicky Safety Nets. Terrace top nets prevent accidental falls and keep your terrace area safe for all activities.",
       "Our terrace nets are ideal for residential buildings, schools, and commercial properties. They provide protection from falls while allowing sunlight and air to pass through.",

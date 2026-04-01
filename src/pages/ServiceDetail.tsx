@@ -19,6 +19,10 @@ import openAreaSafety from "@/assets/open-area-safety.jpg";
 import pigeonNets2k from "@/assets/pigeon-nets-2k.jpg";
 import pigeonNetsInstallation from "@/assets/pigeon-nets-installation.jpg";
 import parallaxBg from "@/assets/parallax-bg.jpg";
+import staircaseNetsNew from "@/assets/staircase-nets-new.jpg";
+import balconySafetyNew from "@/assets/balcony-safety-new.jpg";
+import terraceTopNew from "@/assets/terrace-top-new.jpg";
+import industrialSafetyNew from "@/assets/industrial-safety-new.jpg";
 
 interface ServiceInfo {
   title: string;

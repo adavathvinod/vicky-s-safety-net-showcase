@@ -35,24 +35,30 @@ const serviceData: Record<string, ServiceInfo> = {
     features: ["UV-resistant nylon material", "Free installation", "Custom sizes available", "5+ years durability", "Transparent & invisible look", "Same day service"]
   },
   "kids": {
-    title: "Kids Safety Nets for Balcony in Bangalore",
+    title: "Kids Safety Nets for Balconies in Bangalore",
     image: balconyNets,
     description: [
-      "Protect your children from balcony falls with our specially designed kids safety nets. These nets feature a smaller mesh size that ensures children cannot pass through or get stuck.",
-      "Every year, numerous accidents occur due to children falling from balconies. Our kids safety nets provide reliable protection that gives parents peace of mind.",
-      "The nets are made from soft, non-abrasive material that won't harm children if they come in contact with it. Available in various colors to match your home decor."
+      "Kids Safety Nets For Balconies Are Specially Designed Protective Solutions Installed To Ensure The Safety Of Children In Residential And Commercial Spaces. These Nets Act As Strong Barriers That Prevent Children From Slipping Through Balcony Railings Or Climbing Into Dangerous Areas.",
+      "The primary purpose of kids safety nets is prevention. Children are naturally curious and often unaware of potential dangers around them. Balconies, especially in high-rise buildings, can pose serious risks. Safety nets effectively block access to open edges, reducing the chances of accidents and providing peace of mind to parents.",
+      "These nets are made from high-quality, non-toxic, and durable materials that are completely safe for children. They are designed to withstand pressure and external conditions while maintaining flexibility and strength.",
+      "Additionally, kids safety nets do not affect ventilation or visibility. Families can continue to enjoy fresh air and open views without compromising safety. The installation process is quick, secure, and does not damage walls or structures.",
+      "Moreover, these nets are cost-effective compared to other safety solutions such as grills or glass barriers. They can be customized according to balcony size and design.",
+      "In conclusion, kids safety nets are essential for ensuring child safety, preventing accidents, maintaining airflow, and offering a reliable and affordable safety solution for modern homes."
     ],
-    features: ["Small mesh size for child safety", "Soft non-abrasive material", "Tested for weight bearing", "Custom fitting", "Available in multiple colors", "Child-proof installation"]
+    features: ["Non-toxic & safe materials", "Does not affect ventilation", "Cost-effective solution", "Custom sizes available", "Quick & secure installation", "No wall damage"]
   },
   "pets": {
     title: "Pets Safety Nets in Bangalore",
-    image: balconyNets,
+    image: pigeonNets,
     description: [
-      "Keep your beloved pets safe with our durable pet safety nets for balconies and windows. Cats, dogs, and other pets are at risk of falling from open balconies.",
-      "Our pet safety nets are made from strong nylon material that pets cannot bite through or tear. The mesh size is designed to prevent even small pets from squeezing through.",
-      "We provide custom installation for all types of balconies and windows, ensuring complete coverage and protection for your pets."
+      "Pets Safety Nets Are Designed To Protect Domestic Animals From Falling Or Escaping From Balconies, Windows, And Open Areas. These nets are especially useful for pet owners living in apartments or high-rise buildings.",
+      "The main purpose of pet safety nets is to create a secure environment. Pets, particularly cats and small dogs, tend to climb or jump onto railings and edges, which can lead to dangerous falls. Safety nets provide a protective barrier that prevents such incidents.",
+      "These nets are made from strong and flexible materials that can withstand scratching, biting, and external weather conditions. They are safe for pets and do not cause any harm.",
+      "Additionally, pet safety nets allow pets to enjoy fresh air and outdoor views without restriction. They maintain proper airflow and do not block natural light.",
+      "Installation is simple and can be customized based on the layout of balconies or windows. The nets are designed to blend with the surroundings and maintain the aesthetic appeal of the space.",
+      "In conclusion, pet safety nets are an essential investment for pet owners, ensuring safety, comfort, and freedom for pets while preventing accidents."
     ],
-    features: ["Bite-resistant material", "Small mesh for all pet sizes", "Balcony & window coverage", "Durable nylon nets", "Custom fitting", "Pet-friendly installation"]
+    features: ["Scratch & bite resistant", "Allows fresh air & light", "Custom layout fitting", "Aesthetic design", "Weather resistant", "Safe for all pets"]
   },
   "grill-balcony": {
     title: "Grill Balcony Safety Nets in Bangalore",
@@ -78,11 +84,14 @@ const serviceData: Record<string, ServiceInfo> = {
     title: "Industrial Safety Nets in Bangalore",
     image: industrialNets,
     description: [
-      "Vicky Safety Nets provides industrial-grade safety nets for factories, warehouses, and manufacturing units. Our nets meet all safety standards and regulations.",
-      "Industrial safety nets are essential for preventing worker falls, catching debris, and creating safe working zones. We offer nets in various strengths and specifications.",
-      "Our team has experience in installing safety nets in large industrial complexes and can handle projects of any scale."
+      "Industrial Safety Nets Are Heavy-Duty Protective Systems Used In Construction Sites, Factories, And Warehouses To Prevent Accidents And Ensure Worker Safety. These nets are designed to handle high impact and provide maximum protection.",
+      "The main purpose of industrial safety nets is accident prevention. In high-risk environments, workers are exposed to dangers such as falling from heights or being hit by falling objects. Safety nets act as a reliable protective layer.",
+      "These nets are manufactured using high-strength materials capable of handling heavy loads and harsh conditions. They comply with safety standards and regulations.",
+      "Additionally, industrial safety nets improve productivity by creating a safer working environment. Workers can perform their tasks with confidence, reducing stress and risk.",
+      "Installation is carried out by trained professionals to ensure proper support and durability. The nets are designed to last long even in extreme environments.",
+      "In conclusion, industrial safety nets are essential for workplace safety, reducing risks, ensuring compliance, and protecting workers effectively."
     ],
-    features: ["Meets safety regulations", "Heavy-duty construction", "Custom specifications", "Debris catching nets", "Fall protection", "Large-scale installation"]
+    features: ["High-impact resistance", "Safety compliant", "Improves productivity", "Professional installation", "Extreme durability", "All industrial spaces"]
   },
   "building": {
     title: "Building Safety Nets in Bangalore",
@@ -188,11 +197,14 @@ const serviceData: Record<string, ServiceInfo> = {
     title: "Pigeon Nets in Bangalore",
     image: pigeonNets,
     description: [
-      "High-quality pigeon nets to prevent pigeons from entering your balcony, window, or terrace. Our pigeon nets are made from durable nylon material that is UV-resistant.",
-      "Pigeons cause property damage with their droppings, nesting materials, and can spread diseases. Our pigeon nets provide a humane way to keep them away.",
-      "We offer transparent and colored pigeon nets that blend with your building's appearance. Professional installation with free site inspection."
+      "Pigeon Nets Are Highly Effective Bird Control Solutions Installed To Prevent Pigeons From Entering Balconies, Windows, And Building Spaces. These nets help maintain cleanliness and hygiene in residential and commercial areas.",
+      "The primary purpose of pigeon nets is to prevent birds from nesting and creating mess. Pigeons often leave droppings, feathers, and debris that can lead to health issues and damage property.",
+      "These nets are made from durable, UV-resistant materials that can withstand various weather conditions. They are designed to be long-lasting and require minimal maintenance.",
+      "Additionally, pigeon nets are eco-friendly and do not harm birds. They simply act as barriers that restrict entry while allowing air and light to pass through.",
+      "Professional installation ensures that there are no gaps, providing complete protection. The nets are customized to fit balconies, windows, and open areas perfectly.",
+      "In conclusion, pigeon nets are an effective, humane, and long-term solution for bird control, helping maintain a clean and healthy environment."
     ],
-    features: ["UV-resistant nylon", "Transparent options", "Humane bird control", "Free site inspection", "Custom sizes", "Quick installation"]
+    features: ["UV-resistant material", "Eco-friendly & humane", "Minimal maintenance", "No gaps guaranteed", "Custom fitting", "Long-lasting protection"]
   },
   "pigeon-safety": {
     title: "Pigeon Safety Nets in Bangalore",
@@ -278,11 +290,14 @@ const serviceData: Record<string, ServiceInfo> = {
     title: "Cricket Practice Nets in Bangalore",
     image: cricketNets,
     description: [
-      "Professional cricket practice net enclosures for terraces, grounds, and cricket academies. Our nets are made from heavy-duty green nylon with metal frame structure.",
-      "Practice cricket safely on your building terrace or ground with our custom-built practice net setups. We provide complete solutions including net, frame, and installation.",
-      "Our cricket nets are used by several cricket academies and sports clubs across Bangalore."
+      "Cricket Practice Nets Are Professional Training Solutions Designed For Players To Practice Safely Without Losing Balls Or Causing Damage To Surroundings. These nets are widely used in schools, academies, and personal training areas.",
+      "The primary purpose of cricket nets is to create a controlled practice environment. Players can focus on improving their skills without interruptions or safety concerns.",
+      "These nets are made from strong and durable materials that can withstand repeated ball impact. They are suitable for both indoor and outdoor use.",
+      "Additionally, cricket practice nets can be installed in terraces, playgrounds, and sports complexes. They are customizable based on available space.",
+      "Professional installation ensures stability and long-term usage. The nets are weather-resistant and require minimal maintenance.",
+      "In conclusion, cricket practice nets are essential for safe, efficient, and uninterrupted training sessions, making them a valuable addition to any sports facility."
     ],
-    features: ["Heavy-duty nylon", "Metal frame included", "Terrace installation", "Academy grade", "Custom sizes", "Professional setup"]
+    features: ["Withstands ball impact", "Indoor & outdoor use", "Customizable sizes", "Weather resistant", "Minimal maintenance", "Professional installation"]
   },
   "ball-stop": {
     title: "Sports Ball Stop Nets in Bangalore",
@@ -298,11 +313,14 @@ const serviceData: Record<string, ServiceInfo> = {
     title: "Football Stop Netting in Bangalore",
     image: sportsNets,
     description: [
-      "Goal nets and perimeter netting for football fields. Our football nets are made from high-strength material that can withstand powerful shots.",
-      "We provide goal nets in standard and custom sizes, as well as perimeter netting for full-size and mini football fields.",
-      "Our nets are used by several football clubs and schools across Bangalore."
+      "Football Stop Netting Is Designed To Prevent Balls From Leaving The Play Area, Ensuring Safety And Convenience In Sports Grounds And Playgrounds.",
+      "The main purpose of football netting is to control ball movement. It reduces the risk of damage to nearby property and ensures that games can continue without interruptions.",
+      "These nets are made from high-quality materials that can handle strong impacts and outdoor conditions.",
+      "Additionally, football stop nets improve safety for spectators and nearby areas. They are widely used in schools, stadiums, and recreational grounds.",
+      "Installation is done professionally to ensure proper coverage and durability.",
+      "In conclusion, football stop netting is a reliable solution for maintaining safety and efficiency in sports environments."
     ],
-    features: ["Goal nets available", "Perimeter netting", "High-strength material", "Standard & custom sizes", "Club grade quality", "Professional installation"]
+    features: ["Prevents ball escape", "Spectator safety", "Strong impact resistance", "Schools & stadiums", "Professional coverage", "Durable outdoor material"]
   },
   "terrace-cricket": {
     title: "Terrace Cricket Nets in Bangalore",

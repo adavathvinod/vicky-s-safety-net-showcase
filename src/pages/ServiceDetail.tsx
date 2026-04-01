@@ -197,11 +197,14 @@ const serviceData: Record<string, ServiceInfo> = {
     title: "Pigeon Nets in Bangalore",
     image: pigeonNets,
     description: [
-      "High-quality pigeon nets to prevent pigeons from entering your balcony, window, or terrace. Our pigeon nets are made from durable nylon material that is UV-resistant.",
-      "Pigeons cause property damage with their droppings, nesting materials, and can spread diseases. Our pigeon nets provide a humane way to keep them away.",
-      "We offer transparent and colored pigeon nets that blend with your building's appearance. Professional installation with free site inspection."
+      "Pigeon Nets Are Highly Effective Bird Control Solutions Installed To Prevent Pigeons From Entering Balconies, Windows, And Building Spaces. These nets help maintain cleanliness and hygiene in residential and commercial areas.",
+      "The primary purpose of pigeon nets is to prevent birds from nesting and creating mess. Pigeons often leave droppings, feathers, and debris that can lead to health issues and damage property.",
+      "These nets are made from durable, UV-resistant materials that can withstand various weather conditions. They are designed to be long-lasting and require minimal maintenance.",
+      "Additionally, pigeon nets are eco-friendly and do not harm birds. They simply act as barriers that restrict entry while allowing air and light to pass through.",
+      "Professional installation ensures that there are no gaps, providing complete protection. The nets are customized to fit balconies, windows, and open areas perfectly.",
+      "In conclusion, pigeon nets are an effective, humane, and long-term solution for bird control, helping maintain a clean and healthy environment."
     ],
-    features: ["UV-resistant nylon", "Transparent options", "Humane bird control", "Free site inspection", "Custom sizes", "Quick installation"]
+    features: ["UV-resistant material", "Eco-friendly & humane", "Minimal maintenance", "No gaps guaranteed", "Custom fitting", "Long-lasting protection"]
   },
   "pigeon-safety": {
     title: "Pigeon Safety Nets in Bangalore",

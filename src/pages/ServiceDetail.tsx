@@ -35,14 +35,17 @@ const serviceData: Record<string, ServiceInfo> = {
     features: ["UV-resistant nylon material", "Free installation", "Custom sizes available", "5+ years durability", "Transparent & invisible look", "Same day service"]
   },
   "kids": {
-    title: "Kids Safety Nets for Balcony in Bangalore",
+    title: "Kids Safety Nets for Balconies in Bangalore",
     image: balconyNets,
     description: [
-      "Protect your children from balcony falls with our specially designed kids safety nets. These nets feature a smaller mesh size that ensures children cannot pass through or get stuck.",
-      "Every year, numerous accidents occur due to children falling from balconies. Our kids safety nets provide reliable protection that gives parents peace of mind.",
-      "The nets are made from soft, non-abrasive material that won't harm children if they come in contact with it. Available in various colors to match your home decor."
+      "Kids Safety Nets For Balconies Are Specially Designed Protective Solutions Installed To Ensure The Safety Of Children In Residential And Commercial Spaces. These Nets Act As Strong Barriers That Prevent Children From Slipping Through Balcony Railings Or Climbing Into Dangerous Areas.",
+      "The primary purpose of kids safety nets is prevention. Children are naturally curious and often unaware of potential dangers around them. Balconies, especially in high-rise buildings, can pose serious risks. Safety nets effectively block access to open edges, reducing the chances of accidents and providing peace of mind to parents.",
+      "These nets are made from high-quality, non-toxic, and durable materials that are completely safe for children. They are designed to withstand pressure and external conditions while maintaining flexibility and strength.",
+      "Additionally, kids safety nets do not affect ventilation or visibility. Families can continue to enjoy fresh air and open views without compromising safety. The installation process is quick, secure, and does not damage walls or structures.",
+      "Moreover, these nets are cost-effective compared to other safety solutions such as grills or glass barriers. They can be customized according to balcony size and design.",
+      "In conclusion, kids safety nets are essential for ensuring child safety, preventing accidents, maintaining airflow, and offering a reliable and affordable safety solution for modern homes."
     ],
-    features: ["Small mesh size for child safety", "Soft non-abrasive material", "Tested for weight bearing", "Custom fitting", "Available in multiple colors", "Child-proof installation"]
+    features: ["Non-toxic & safe materials", "Does not affect ventilation", "Cost-effective solution", "Custom sizes available", "Quick & secure installation", "No wall damage"]
   },
   "pets": {
     title: "Pets Safety Nets in Bangalore",

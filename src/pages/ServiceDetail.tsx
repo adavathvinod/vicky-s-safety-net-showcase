@@ -49,13 +49,16 @@ const serviceData: Record<string, ServiceInfo> = {
   },
   "pets": {
     title: "Pets Safety Nets in Bangalore",
-    image: balconyNets,
+    image: pigeonNets,
     description: [
-      "Keep your beloved pets safe with our durable pet safety nets for balconies and windows. Cats, dogs, and other pets are at risk of falling from open balconies.",
-      "Our pet safety nets are made from strong nylon material that pets cannot bite through or tear. The mesh size is designed to prevent even small pets from squeezing through.",
-      "We provide custom installation for all types of balconies and windows, ensuring complete coverage and protection for your pets."
+      "Pets Safety Nets Are Designed To Protect Domestic Animals From Falling Or Escaping From Balconies, Windows, And Open Areas. These nets are especially useful for pet owners living in apartments or high-rise buildings.",
+      "The main purpose of pet safety nets is to create a secure environment. Pets, particularly cats and small dogs, tend to climb or jump onto railings and edges, which can lead to dangerous falls. Safety nets provide a protective barrier that prevents such incidents.",
+      "These nets are made from strong and flexible materials that can withstand scratching, biting, and external weather conditions. They are safe for pets and do not cause any harm.",
+      "Additionally, pet safety nets allow pets to enjoy fresh air and outdoor views without restriction. They maintain proper airflow and do not block natural light.",
+      "Installation is simple and can be customized based on the layout of balconies or windows. The nets are designed to blend with the surroundings and maintain the aesthetic appeal of the space.",
+      "In conclusion, pet safety nets are an essential investment for pet owners, ensuring safety, comfort, and freedom for pets while preventing accidents."
     ],
-    features: ["Bite-resistant material", "Small mesh for all pet sizes", "Balcony & window coverage", "Durable nylon nets", "Custom fitting", "Pet-friendly installation"]
+    features: ["Scratch & bite resistant", "Allows fresh air & light", "Custom layout fitting", "Aesthetic design", "Weather resistant", "Safe for all pets"]
   },
   "grill-balcony": {
     title: "Grill Balcony Safety Nets in Bangalore",

@@ -19,6 +19,10 @@ import openAreaSafety from "@/assets/open-area-safety.jpg";
 import pigeonNets2k from "@/assets/pigeon-nets-2k.jpg";
 import pigeonNetsInstallation from "@/assets/pigeon-nets-installation.jpg";
 import parallaxBg from "@/assets/parallax-bg.jpg";
+import staircaseNetsNew from "@/assets/staircase-nets-new.jpg";
+import balconySafetyNew from "@/assets/balcony-safety-new.jpg";
+import terraceTopNew from "@/assets/terrace-top-new.jpg";
+import industrialSafetyNew from "@/assets/industrial-safety-new.jpg";
 
 interface ServiceInfo {
   title: string;
@@ -66,7 +70,7 @@ const serviceData: Record<string, ServiceInfo> = {
   },
   "grill-balcony": {
     title: "Grill Balcony Safety Nets in Bangalore",
-    image: balconyNets,
+    image: balconySafetyNew,
     description: [
       "Even grilled balconies need additional safety nets, especially when the grill gaps are wide enough for children or objects to pass through.",
       "Our grill balcony safety nets are designed to fit perfectly on existing grills without any structural modifications. We use specialized clips and fasteners for secure attachment.",
@@ -76,7 +80,7 @@ const serviceData: Record<string, ServiceInfo> = {
   },
   "terrace": {
     title: "Terrace Top Safety Nets in Bangalore",
-    image: buildingNets,
+    image: terraceTopNew,
     description: [
       "Cover your terrace with high-quality safety nets from Vicky Safety Nets. Terrace top nets prevent accidental falls and keep your terrace area safe for all activities.",
       "Our terrace nets are ideal for residential buildings, schools, and commercial properties. They provide protection from falls while allowing sunlight and air to pass through.",
@@ -86,7 +90,7 @@ const serviceData: Record<string, ServiceInfo> = {
   },
   "industrial": {
     title: "Industrial Safety Nets in Bangalore",
-    image: industrialNets,
+    image: industrialSafetyNew,
     description: [
       "Industrial Safety Nets Are Heavy-Duty Protective Systems Used In Construction Sites, Factories, And Warehouses To Prevent Accidents And Ensure Worker Safety. These nets are designed to handle high impact and provide maximum protection.",
       "The main purpose of industrial safety nets is accident prevention. In high-risk environments, workers are exposed to dangers such as falling from heights or being hit by falling objects. Safety nets act as a reliable protective layer.",
@@ -129,7 +133,7 @@ const serviceData: Record<string, ServiceInfo> = {
   },
   "staircase": {
     title: "Staircase Safety Nets in Bangalore",
-    image: staircaseNets,
+    image: staircaseNetsNew,
     description: [
       "Staircase safety nets prevent children and pets from falling through staircase gaps and railings. Essential for homes with young children.",
       "Our staircase nets are easy to install on all types of railings including wooden, metal, and glass. We use transparent nets that don't affect the look of your staircase.",

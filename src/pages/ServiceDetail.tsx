@@ -133,7 +133,7 @@ const serviceData: Record<string, ServiceInfo> = {
   },
   "staircase": {
     title: "Staircase Safety Nets in Bangalore",
-    image: staircaseNets,
+    image: staircaseNetsNew,
     description: [
       "Staircase safety nets prevent children and pets from falling through staircase gaps and railings. Essential for homes with young children.",
       "Our staircase nets are easy to install on all types of railings including wooden, metal, and glass. We use transparent nets that don't affect the look of your staircase.",

@@ -313,11 +313,14 @@ const serviceData: Record<string, ServiceInfo> = {
     title: "Football Stop Netting in Bangalore",
     image: sportsNets,
     description: [
-      "Goal nets and perimeter netting for football fields. Our football nets are made from high-strength material that can withstand powerful shots.",
-      "We provide goal nets in standard and custom sizes, as well as perimeter netting for full-size and mini football fields.",
-      "Our nets are used by several football clubs and schools across Bangalore."
+      "Football Stop Netting Is Designed To Prevent Balls From Leaving The Play Area, Ensuring Safety And Convenience In Sports Grounds And Playgrounds.",
+      "The main purpose of football netting is to control ball movement. It reduces the risk of damage to nearby property and ensures that games can continue without interruptions.",
+      "These nets are made from high-quality materials that can handle strong impacts and outdoor conditions.",
+      "Additionally, football stop nets improve safety for spectators and nearby areas. They are widely used in schools, stadiums, and recreational grounds.",
+      "Installation is done professionally to ensure proper coverage and durability.",
+      "In conclusion, football stop netting is a reliable solution for maintaining safety and efficiency in sports environments."
     ],
-    features: ["Goal nets available", "Perimeter netting", "High-strength material", "Standard & custom sizes", "Club grade quality", "Professional installation"]
+    features: ["Prevents ball escape", "Spectator safety", "Strong impact resistance", "Schools & stadiums", "Professional coverage", "Durable outdoor material"]
   },
   "terrace-cricket": {
     title: "Terrace Cricket Nets in Bangalore",

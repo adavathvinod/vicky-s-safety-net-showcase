@@ -70,7 +70,7 @@ const serviceData: Record<string, ServiceInfo> = {
   },
   "grill-balcony": {
     title: "Grill Balcony Safety Nets in Bangalore",
-    image: balconyNets,
+    image: balconySafetyNew,
     description: [
       "Even grilled balconies need additional safety nets, especially when the grill gaps are wide enough for children or objects to pass through.",
       "Our grill balcony safety nets are designed to fit perfectly on existing grills without any structural modifications. We use specialized clips and fasteners for secure attachment.",

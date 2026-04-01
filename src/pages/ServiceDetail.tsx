@@ -290,11 +290,14 @@ const serviceData: Record<string, ServiceInfo> = {
     title: "Cricket Practice Nets in Bangalore",
     image: cricketNets,
     description: [
-      "Professional cricket practice net enclosures for terraces, grounds, and cricket academies. Our nets are made from heavy-duty green nylon with metal frame structure.",
-      "Practice cricket safely on your building terrace or ground with our custom-built practice net setups. We provide complete solutions including net, frame, and installation.",
-      "Our cricket nets are used by several cricket academies and sports clubs across Bangalore."
+      "Cricket Practice Nets Are Professional Training Solutions Designed For Players To Practice Safely Without Losing Balls Or Causing Damage To Surroundings. These nets are widely used in schools, academies, and personal training areas.",
+      "The primary purpose of cricket nets is to create a controlled practice environment. Players can focus on improving their skills without interruptions or safety concerns.",
+      "These nets are made from strong and durable materials that can withstand repeated ball impact. They are suitable for both indoor and outdoor use.",
+      "Additionally, cricket practice nets can be installed in terraces, playgrounds, and sports complexes. They are customizable based on available space.",
+      "Professional installation ensures stability and long-term usage. The nets are weather-resistant and require minimal maintenance.",
+      "In conclusion, cricket practice nets are essential for safe, efficient, and uninterrupted training sessions, making them a valuable addition to any sports facility."
     ],
-    features: ["Heavy-duty nylon", "Metal frame included", "Terrace installation", "Academy grade", "Custom sizes", "Professional setup"]
+    features: ["Withstands ball impact", "Indoor & outdoor use", "Customizable sizes", "Weather resistant", "Minimal maintenance", "Professional installation"]
   },
   "ball-stop": {
     title: "Sports Ball Stop Nets in Bangalore",

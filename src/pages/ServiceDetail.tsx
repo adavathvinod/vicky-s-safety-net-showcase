@@ -90,7 +90,7 @@ const serviceData: Record<string, ServiceInfo> = {
   },
   "industrial": {
     title: "Industrial Safety Nets in Bangalore",
-    image: industrialNets,
+    image: industrialSafetyNew,
     description: [
       "Industrial Safety Nets Are Heavy-Duty Protective Systems Used In Construction Sites, Factories, And Warehouses To Prevent Accidents And Ensure Worker Safety. These nets are designed to handle high impact and provide maximum protection.",
       "The main purpose of industrial safety nets is accident prevention. In high-risk environments, workers are exposed to dangers such as falling from heights or being hit by falling objects. Safety nets act as a reliable protective layer.",

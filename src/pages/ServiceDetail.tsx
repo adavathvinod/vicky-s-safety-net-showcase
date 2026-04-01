@@ -14,6 +14,10 @@ import carParkingNets from "@/assets/car-parking-nets.jpg";
 import coconutNets from "@/assets/coconut-nets.jpg";
 import birdSpikes from "@/assets/bird-spikes.jpg";
 import sportsNets from "@/assets/sports-nets.jpg";
+import ductAreaSafety from "@/assets/duct-area-safety.jpg";
+import openAreaSafety from "@/assets/open-area-safety.jpg";
+import pigeonNets2k from "@/assets/pigeon-nets-2k.jpg";
+import pigeonNetsInstallation from "@/assets/pigeon-nets-installation.jpg";
 import parallaxBg from "@/assets/parallax-bg.jpg";
 
 interface ServiceInfo {
@@ -105,7 +109,7 @@ const serviceData: Record<string, ServiceInfo> = {
   },
   "duct-area": {
     title: "Duct Area Safety Nets in Bangalore",
-    image: balconyNets,
+    image: ductAreaSafety,
     description: [
       "Duct areas in buildings are common accident spots. Our duct area safety nets prevent accidental falls and keep these areas safe for maintenance workers.",
       "We provide custom-fit nets for duct areas of all sizes and shapes. Our team measures each duct area precisely to ensure complete coverage.",
@@ -115,7 +119,7 @@ const serviceData: Record<string, ServiceInfo> = {
   },
   "open-area": {
     title: "Open Area Safety Nets in Bangalore",
-    image: balconyNets,
+    image: openAreaSafety,
     description: [
       "Protect open areas in buildings, complexes, and public spaces with our durable safety nets. Open areas like courtyards, light wells, and gaps between buildings need protection.",
       "Our open area nets are made from heavy-gauge nylon that can cover large spans. We use cable systems to support nets across wide areas.",
@@ -208,7 +212,7 @@ const serviceData: Record<string, ServiceInfo> = {
   },
   "pigeon-safety": {
     title: "Pigeon Safety Nets in Bangalore",
-    image: pigeonNets,
+    image: pigeonNets2k,
     description: [
       "Complete pigeon safety net solutions for residential apartments and commercial buildings. Stop pigeons from nesting and dirtying your property.",
       "Our pigeon safety nets cover balconies, windows, terraces, and any open areas where pigeons tend to enter. The nets are virtually invisible from a distance.",
@@ -218,7 +222,7 @@ const serviceData: Record<string, ServiceInfo> = {
   },
   "pigeon-installation": {
     title: "Pigeon Nets Installation in Bangalore",
-    image: pigeonNets,
+    image: pigeonNetsInstallation,
     description: [
       "Professional pigeon net installation service by trained experts. We ensure perfect fitting and secure installation for lasting protection.",
       "Our installation process includes free site visit, measurement, custom cutting, and professional fixing. We use high-quality clips and fasteners for secure attachment.",

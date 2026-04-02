@@ -5,8 +5,6 @@ import balconyNets from "@/assets/balcony-nets.jpg";
 import balconySafetyNew from "@/assets/balcony-safety-new.jpg";
 import birdSpikes from "@/assets/bird-spikes.jpg";
 import buildingNets from "@/assets/building-nets.jpg";
-import carParkingNets from "@/assets/car-parking-nets.jpg";
-import coconutNets from "@/assets/coconut-nets.jpg";
 import cricketNets from "@/assets/cricket-nets.jpg";
 import ductAreaSafety from "@/assets/duct-area-safety.jpg";
 import industrialNets from "@/assets/industrial-nets.jpg";

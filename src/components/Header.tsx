@@ -122,7 +122,7 @@ const Header = () => {
       <nav className="bg-background shadow-md">
         <div className="container flex justify-between items-center py-3">
           <Link to="/" className="flex items-center gap-2">
-            <img src={vickyLogo} alt="Vicky Safety Nets Logo" className="h-12 w-auto" />
+            <img src={vickyLogo} alt="Vicky Safety Nets Logo" className="h-16 md:h-20 w-auto" />
           </Link>
 
           {/* Desktop nav */}

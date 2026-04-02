@@ -15,6 +15,9 @@ import pigeonNets2k from "@/assets/pigeon-nets-2k.jpg";
 import pigeonNetsInstallation from "@/assets/pigeon-nets-installation.jpg";
 import swimmingPoolNets from "@/assets/swimming-pool-nets.jpg";
 import terraceTopNew from "@/assets/terrace-top-new.jpg";
+import swimmingPoolNew from "@/assets/swimming-pool-new.jpg";
+import carParkingNew from "@/assets/car-parking-new.jpg";
+import birdProtectionNew from "@/assets/bird-protection-new.jpg";
 
 const allImages = [
   { src: balconyNets, label: "Balcony Safety Nets" },

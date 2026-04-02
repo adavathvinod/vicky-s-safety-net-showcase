@@ -5,8 +5,6 @@ import balconyNets from "@/assets/balcony-nets.jpg";
 import balconySafetyNew from "@/assets/balcony-safety-new.jpg";
 import birdSpikes from "@/assets/bird-spikes.jpg";
 import buildingNets from "@/assets/building-nets.jpg";
-import carParkingNets from "@/assets/car-parking-nets.jpg";
-import coconutNets from "@/assets/coconut-nets.jpg";
 import cricketNets from "@/assets/cricket-nets.jpg";
 import ductAreaSafety from "@/assets/duct-area-safety.jpg";
 import industrialNets from "@/assets/industrial-nets.jpg";
@@ -15,9 +13,6 @@ import openAreaSafety from "@/assets/open-area-safety.jpg";
 import pigeonNets from "@/assets/pigeon-nets.jpg";
 import pigeonNets2k from "@/assets/pigeon-nets-2k.jpg";
 import pigeonNetsInstallation from "@/assets/pigeon-nets-installation.jpg";
-import sportsNets from "@/assets/sports-nets.jpg";
-import staircaseNets from "@/assets/staircase-nets.jpg";
-import staircaseNetsNew from "@/assets/staircase-nets-new.jpg";
 import swimmingPoolNets from "@/assets/swimming-pool-nets.jpg";
 import terraceTopNew from "@/assets/terrace-top-new.jpg";
 
@@ -26,8 +21,6 @@ const allImages = [
   { src: balconySafetyNew, label: "Grill Balcony Safety Nets" },
   { src: birdSpikes, label: "Bird Spikes" },
   { src: buildingNets, label: "Building Safety Nets" },
-  { src: carParkingNets, label: "Car Parking Safety Nets" },
-  { src: coconutNets, label: "Coconut Tree Safety Nets" },
   { src: cricketNets, label: "Cricket Practice Nets" },
   { src: ductAreaSafety, label: "Duct Area Safety Nets" },
   { src: industrialNets, label: "Industrial Safety Nets" },
@@ -36,9 +29,6 @@ const allImages = [
   { src: pigeonNets, label: "Pigeon Nets" },
   { src: pigeonNets2k, label: "Pigeon Safety Nets" },
   { src: pigeonNetsInstallation, label: "Pigeon Nets Installation" },
-  { src: sportsNets, label: "Sports Nets" },
-  { src: staircaseNets, label: "Staircase Safety Nets" },
-  { src: staircaseNetsNew, label: "Staircase Safety Nets" },
   { src: swimmingPoolNets, label: "Swimming Pool Safety Nets" },
   { src: terraceTopNew, label: "Terrace Top Nets" },
 ];

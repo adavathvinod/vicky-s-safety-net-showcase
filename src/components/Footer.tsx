@@ -46,7 +46,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src={vickyLogo} alt="Vicky Safety Nets Logo" className="h-10 w-auto brightness-0 invert" loading="lazy" />
+              <img src={vickyLogo} alt="Vicky Safety Nets Logo" className="h-16 w-auto brightness-0 invert" loading="lazy" />
             </div>
             <p className="text-sm leading-relaxed opacity-80">
               Our services include Balcony Safety Net, Children Safety Net, Construction Safety Net, Duct Area Safety Net, Industrial Safety Net, Swimming Pool Safety Net, Staircase Safety Net, Monkey Safety Net, Bird Spikes, Anti Bird, Pigeon Nets for Balconies, Bird Protection Nets, Cricket Practice Net, All Sports Practice Nets.

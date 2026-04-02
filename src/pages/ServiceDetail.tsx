@@ -23,6 +23,9 @@ import staircaseNetsNew from "@/assets/staircase-nets-new.jpg";
 import balconySafetyNew from "@/assets/balcony-safety-new.jpg";
 import terraceTopNew from "@/assets/terrace-top-new.jpg";
 import industrialSafetyNew from "@/assets/industrial-safety-new.jpg";
+import swimmingPoolNew from "@/assets/swimming-pool-new.jpg";
+import carParkingNew from "@/assets/car-parking-new.jpg";
+import birdProtectionNew from "@/assets/bird-protection-new.jpg";
 
 interface ServiceInfo {
   title: string;
@@ -153,7 +156,7 @@ const serviceData: Record<string, ServiceInfo> = {
   },
   "swimming-pool": {
     title: "Swimming Pool Safety Nets in Bangalore",
-    image: swimmingPoolNets,
+    image: swimmingPoolNew,
     description: [
       "Swimming pool safety nets prevent accidental drowning, especially for children and pets. Our pool nets are strong enough to hold the weight of a child if they accidentally walk onto it.",
       "We provide custom-fit nets for pools of all shapes and sizes. The nets can be easily removed for swimming and re-installed quickly.",
@@ -173,7 +176,7 @@ const serviceData: Record<string, ServiceInfo> = {
   },
   "car-parking": {
     title: "Car Parking Safety Nets in Bangalore",
-    image: carParkingNets,
+    image: carParkingNew,
     description: [
       "HDPE shade nets for car parking areas provide protection from sun, rain, and falling objects. Keep your vehicles safe from harsh weather and debris.",
       "Our car parking nets are available in various shade percentages (50%, 75%, 90%) to suit your requirements. They significantly reduce heat inside parked vehicles.",
@@ -246,7 +249,7 @@ const serviceData: Record<string, ServiceInfo> = {
   },
   "bird-protection": {
     title: "Bird Protection Nets in Bangalore",
-    image: pigeonNets,
+    image: birdProtectionNew,
     description: [
       "Comprehensive bird protection net solutions for all types of buildings. Our nets keep all species of birds away without harming them.",
       "Bird protection nets are essential for food processing units, warehouses, hospitals, and residential buildings where bird intrusion causes hygiene issues.",

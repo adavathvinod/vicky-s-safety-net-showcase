@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Phone, Mail, Menu, X, ChevronDown } from "lucide-react";
+import vickyLogo from "@/assets/vicky-logo.png";
 
 const safetyNetsDropdown = [
   { label: "Balcony Safety Nets", path: "/safety-nets/balcony" },

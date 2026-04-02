@@ -21,8 +21,6 @@ const allImages = [
   { src: balconySafetyNew, label: "Grill Balcony Safety Nets" },
   { src: birdSpikes, label: "Bird Spikes" },
   { src: buildingNets, label: "Building Safety Nets" },
-  { src: carParkingNets, label: "Car Parking Safety Nets" },
-  { src: coconutNets, label: "Coconut Tree Safety Nets" },
   { src: cricketNets, label: "Cricket Practice Nets" },
   { src: ductAreaSafety, label: "Duct Area Safety Nets" },
   { src: industrialNets, label: "Industrial Safety Nets" },
@@ -31,9 +29,6 @@ const allImages = [
   { src: pigeonNets, label: "Pigeon Nets" },
   { src: pigeonNets2k, label: "Pigeon Safety Nets" },
   { src: pigeonNetsInstallation, label: "Pigeon Nets Installation" },
-  { src: sportsNets, label: "Sports Nets" },
-  { src: staircaseNets, label: "Staircase Safety Nets" },
-  { src: staircaseNetsNew, label: "Staircase Safety Nets" },
   { src: swimmingPoolNets, label: "Swimming Pool Safety Nets" },
   { src: terraceTopNew, label: "Terrace Top Nets" },
 ];

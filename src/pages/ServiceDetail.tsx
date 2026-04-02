@@ -156,7 +156,7 @@ const serviceData: Record<string, ServiceInfo> = {
   },
   "swimming-pool": {
     title: "Swimming Pool Safety Nets in Bangalore",
-    image: swimmingPoolNets,
+    image: swimmingPoolNew,
     description: [
       "Swimming pool safety nets prevent accidental drowning, especially for children and pets. Our pool nets are strong enough to hold the weight of a child if they accidentally walk onto it.",
       "We provide custom-fit nets for pools of all shapes and sizes. The nets can be easily removed for swimming and re-installed quickly.",

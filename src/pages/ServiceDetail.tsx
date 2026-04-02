@@ -23,6 +23,9 @@ import staircaseNetsNew from "@/assets/staircase-nets-new.jpg";
 import balconySafetyNew from "@/assets/balcony-safety-new.jpg";
 import terraceTopNew from "@/assets/terrace-top-new.jpg";
 import industrialSafetyNew from "@/assets/industrial-safety-new.jpg";
+import swimmingPoolNew from "@/assets/swimming-pool-new.jpg";
+import carParkingNew from "@/assets/car-parking-new.jpg";
+import birdProtectionNew from "@/assets/bird-protection-new.jpg";
 
 interface ServiceInfo {
   title: string;

@@ -249,7 +249,7 @@ const serviceData: Record<string, ServiceInfo> = {
   },
   "bird-protection": {
     title: "Bird Protection Nets in Bangalore",
-    image: pigeonNets,
+    image: birdProtectionNew,
     description: [
       "Comprehensive bird protection net solutions for all types of buildings. Our nets keep all species of birds away without harming them.",
       "Bird protection nets are essential for food processing units, warehouses, hospitals, and residential buildings where bird intrusion causes hygiene issues.",

@@ -33,6 +33,9 @@ const allImages = [
   { src: pigeonNets2k, label: "Pigeon Safety Nets" },
   { src: pigeonNetsInstallation, label: "Pigeon Nets Installation" },
   { src: swimmingPoolNets, label: "Swimming Pool Safety Nets" },
+  { src: swimmingPoolNew, label: "Swimming Pool Safety Nets" },
+  { src: carParkingNew, label: "Car Parking Safety Nets" },
+  { src: birdProtectionNew, label: "Bird Protection Nets" },
   { src: terraceTopNew, label: "Terrace Top Nets" },
 ];
 

@@ -13,9 +13,6 @@ import openAreaSafety from "@/assets/open-area-safety.jpg";
 import pigeonNets from "@/assets/pigeon-nets.jpg";
 import pigeonNets2k from "@/assets/pigeon-nets-2k.jpg";
 import pigeonNetsInstallation from "@/assets/pigeon-nets-installation.jpg";
-import sportsNets from "@/assets/sports-nets.jpg";
-import staircaseNets from "@/assets/staircase-nets.jpg";
-import staircaseNetsNew from "@/assets/staircase-nets-new.jpg";
 import swimmingPoolNets from "@/assets/swimming-pool-nets.jpg";
 import terraceTopNew from "@/assets/terrace-top-new.jpg";
 

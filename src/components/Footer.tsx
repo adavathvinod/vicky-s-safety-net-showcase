@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin } from "lucide-react";
+import vickyLogo from "@/assets/vicky-logo.png";
 
 const Footer = () => {
   const safetyServices = [

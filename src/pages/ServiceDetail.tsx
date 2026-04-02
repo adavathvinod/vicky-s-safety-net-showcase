@@ -176,7 +176,7 @@ const serviceData: Record<string, ServiceInfo> = {
   },
   "car-parking": {
     title: "Car Parking Safety Nets in Bangalore",
-    image: carParkingNets,
+    image: carParkingNew,
     description: [
       "HDPE shade nets for car parking areas provide protection from sun, rain, and falling objects. Keep your vehicles safe from harsh weather and debris.",
       "Our car parking nets are available in various shade percentages (50%, 75%, 90%) to suit your requirements. They significantly reduce heat inside parked vehicles.",

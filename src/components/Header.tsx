@@ -122,13 +122,7 @@ const Header = () => {
       <nav className="bg-background shadow-md">
         <div className="container flex justify-between items-center py-3">
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-heading font-bold text-lg">V</span>
-            </div>
-            <div>
-              <span className="font-heading font-bold text-xl text-primary">Vicky</span>
-              <span className="block text-xs font-heading font-semibold text-secondary -mt-1">SAFETY NETS</span>
-            </div>
+            <img src={vickyLogo} alt="Vicky Safety Nets Logo" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop nav */}

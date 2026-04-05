@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 import { Phone, Mail, Menu, X, ChevronDown } from "lucide-react";
 import vickyLogo from "@/assets/vicky-logo.png";
+import { toImageSrc } from "@/lib/image";
 
 const safetyNetsDropdown = [
   { label: "Balcony Safety Nets", path: "/safety-nets/balcony" },
@@ -47,8 +47,6 @@ const whyUsDropdown = [
   { label: "About", path: "/why-us" },
   { label: "Gallery", path: "/gallery" },
   { label: "FAQ's", path: "/faq" },
-  { label: "Blog", path: "/blog" },
-  { label: "Videos", path: "/videos" },
 ];
 
 interface DropdownProps {
@@ -60,19 +58,19 @@ interface DropdownProps {
 const NavDropdown = ({ label, items, isActive }: DropdownProps) => {
   return (
     <div className="relative group">
-      <button className={`flex items-center gap-1 px-3 py-2 font-heading text-sm font-medium transition-colors ${isActive ? 'text-secondary' : 'text-foreground hover:text-primary'}`}>
+      <button className={`flex items-center gap-1 px-3 py-2 font-heading text-sm font-medium transition-colors ${isActive ? "text-secondary" : "text-foreground hover:text-primary"}`}>
         {label}
         <ChevronDown className="w-3 h-3 transition-transform group-hover:rotate-180" />
       </button>
-      <div className="absolute left-0 top-full z-50 hidden group-hover:block min-w-[220px] bg-foreground rounded shadow-xl">
+      <div className="absolute left-0 top-full z-50 hidden min-w-[220px] max-h-[calc(100vh-9rem)] overflow-y-auto rounded bg-foreground shadow-xl group-hover:block">
         {items.map((item) => (
-          <Link
+          <a
             key={item.path}
-            to={item.path}
+            href={item.path}
             className="block px-4 py-2.5 text-sm text-background/90 hover:text-cta transition-colors hover:bg-foreground/90"
           >
             {item.label}
-          </Link>
+          </a>
         ))}
       </div>
     </div>
@@ -82,7 +80,11 @@ const NavDropdown = ({ label, items, isActive }: DropdownProps) => {
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openMobileDropdown, setOpenMobileDropdown] = useState<string | null>(null);
-  const location = useLocation();
+  const [pathname, setPathname] = useState("/");
+
+  useEffect(() => {
+    setPathname(window.location.pathname);
+  }, []);
 
   const toggleMobileDropdown = (name: string) => {
     setOpenMobileDropdown(openMobileDropdown === name ? null : name);
@@ -97,84 +99,81 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50">
-      {/* Scrolling services bar */}
       <div className="bg-foreground overflow-hidden py-1">
-        <div className="animate-slide-text whitespace-nowrap text-xs text-background/80">
+        <div className="animate-slide-text pause-on-hover whitespace-nowrap text-xs text-background/80">
           Balcony Safety Nets, Pigeon Nets Installation, Building Safety Nets, Duct Area Safety Nets, Children Safety Nets, Terrace Top Nets, Terrace Cricket Nets, Open Area Safety Nets, Swimming Pool Safety Nets, Industrial Safety Nets, Bird Spikes, Anti Bird Nets, Construction Safety Nets
         </div>
       </div>
 
-      {/* Top bar with contact */}
       <div className="topbar-bg py-2">
-        <div className="container flex justify-between items-center text-topbar-foreground text-sm">
-          <a href="tel:7795891177" className="flex items-center gap-2 hover:text-cta transition-colors">
+        <div className="container flex flex-col gap-2 text-topbar-foreground text-xs sm:flex-row sm:items-center sm:justify-between sm:text-sm">
+          <a href="tel:7795891177" className="flex items-center justify-center gap-2 text-center hover:text-cta transition-colors sm:justify-start">
             <Phone className="w-4 h-4" />
             +91 7795891177
           </a>
-          <a href="mailto:vickysafetynets552@gmail.com" className="flex items-center gap-2 hover:text-cta transition-colors">
-            <Mail className="w-4 h-4" />
-            vickysafetynets552@gmail.com
+          <a
+            href="mailto:vickysafetynets552@gmail.com"
+            className="flex min-w-0 items-center justify-center gap-2 text-center break-all hover:text-cta transition-colors sm:justify-start sm:text-right sm:break-normal"
+          >
+            <Mail className="h-4 w-4 shrink-0" />
+            <span className="min-w-0">vickysafetynets552@gmail.com</span>
           </a>
         </div>
       </div>
 
-      {/* Main navigation */}
       <nav className="bg-background shadow-md">
-        <div className="container flex justify-between items-center py-3">
-          <Link to="/" className="flex items-center gap-2">
-            <img src={vickyLogo} alt="Vicky Safety Nets Logo" className="h-16 md:h-20 w-auto" />
-          </Link>
+        <div className="container flex items-center justify-between gap-4 py-3">
+          <a href="/" className="flex items-center gap-2">
+            <img src={toImageSrc(vickyLogo)} alt="Vicky Safety Nets Logo" className="h-auto w-auto max-h-14 md:max-h-20" />
+          </a>
 
-          {/* Desktop nav */}
           <div className="hidden lg:flex items-center gap-1">
-            <Link to="/" className={`px-3 py-2 font-heading text-sm font-medium transition-colors ${location.pathname === '/' ? 'text-secondary' : 'text-foreground hover:text-primary'}`}>
+            <a href="/" className={`px-3 py-2 font-heading text-sm font-medium transition-colors ${pathname === "/" ? "text-secondary" : "text-foreground hover:text-primary"}`}>
               Home
-            </Link>
+            </a>
             {allDropdowns.map((dd) => (
               <NavDropdown
                 key={dd.name}
                 label={dd.name}
                 items={dd.items}
-                isActive={location.pathname.startsWith(dd.prefix)}
+                isActive={pathname.startsWith(dd.prefix)}
               />
             ))}
-            <Link to="/contact" className={`px-3 py-2 font-heading text-sm font-medium transition-colors ${location.pathname === '/contact' ? 'text-secondary' : 'text-foreground hover:text-primary'}`}>
+            <a href="/contact" className={`px-3 py-2 font-heading text-sm font-medium transition-colors ${pathname === "/contact" ? "text-secondary" : "text-foreground hover:text-primary"}`}>
               Contact
-            </Link>
+            </a>
           </div>
 
           <a href="tel:7795891177" className="hidden lg:block cta-button text-sm">
             Call Now
           </a>
 
-          {/* Mobile toggle */}
           <button onClick={() => setMobileOpen(!mobileOpen)} className="lg:hidden p-2">
             {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
 
-        {/* Mobile nav */}
         {mobileOpen && (
           <div className="lg:hidden bg-background border-t pb-4">
-            <Link to="/" onClick={() => setMobileOpen(false)} className="block px-6 py-3 font-heading text-sm font-medium hover:bg-muted">Home</Link>
+            <a href="/" onClick={() => setMobileOpen(false)} className="block px-6 py-3 font-heading text-sm font-medium hover:bg-muted">Home</a>
             {allDropdowns.map((dd) => (
               <div key={dd.name}>
                 <button onClick={() => toggleMobileDropdown(dd.name)} className="w-full flex justify-between items-center px-6 py-3 font-heading text-sm font-medium hover:bg-muted">
                   {dd.name}
-                  <ChevronDown className={`w-4 h-4 transition-transform ${openMobileDropdown === dd.name ? 'rotate-180' : ''}`} />
+                  <ChevronDown className={`w-4 h-4 transition-transform ${openMobileDropdown === dd.name ? "rotate-180" : ""}`} />
                 </button>
                 {openMobileDropdown === dd.name && (
                   <div className="bg-muted">
                     {dd.items.map((item) => (
-                      <Link key={item.path} to={item.path} onClick={() => setMobileOpen(false)} className="block px-10 py-2 text-sm hover:text-primary">
+                      <a key={item.path} href={item.path} onClick={() => setMobileOpen(false)} className="block px-10 py-2 text-sm hover:text-primary">
                         {item.label}
-                      </Link>
+                      </a>
                     ))}
                   </div>
                 )}
               </div>
             ))}
-            <Link to="/contact" onClick={() => setMobileOpen(false)} className="block px-6 py-3 font-heading text-sm font-medium hover:bg-muted">Contact</Link>
+            <a href="/contact" onClick={() => setMobileOpen(false)} className="block px-6 py-3 font-heading text-sm font-medium hover:bg-muted">Contact</a>
             <div className="px-6 pt-2">
               <a href="tel:7795891177" className="cta-button block text-center text-sm">Call Now</a>
             </div>

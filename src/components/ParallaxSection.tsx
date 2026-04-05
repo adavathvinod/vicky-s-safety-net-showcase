@@ -1,5 +1,7 @@
+import { toImageSrc, type ImageLike } from "@/lib/image";
+
 interface ParallaxSectionProps {
-  backgroundImage: string;
+  backgroundImage: ImageLike;
   children: React.ReactNode;
   className?: string;
 }
@@ -8,7 +10,7 @@ const ParallaxSection = ({ backgroundImage, children, className = "" }: Parallax
   return (
     <section
       className={`parallax-section py-20 ${className}`}
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      style={{ backgroundImage: `url(${toImageSrc(backgroundImage)})` }}
     >
       <div className="parallax-overlay" />
       <div className="relative z-10">

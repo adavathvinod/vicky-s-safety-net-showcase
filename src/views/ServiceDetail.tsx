@@ -1,7 +1,9 @@
 import Layout from "@/components/Layout";
 import ParallaxSection from "@/components/ParallaxSection";
 import EnquiryBar from "@/components/EnquiryBar";
-import { useParams } from "react-router-dom";
+import { BadgeCheck, Clock3, MapPin, MessageCircleMore, Phone } from "lucide-react";
+import { BUSINESS_PHONE, WHATSAPP_URL, trackLeadClick } from "@/lib/leadTracking";
+import { toImageSrc, type ImageLike } from "@/lib/image";
 
 import balconyNets from "@/assets/balcony-nets.jpg";
 import pigeonNets from "@/assets/pigeon-nets.jpg";
@@ -29,12 +31,12 @@ import birdProtectionNew from "@/assets/bird-protection-new.jpg";
 
 interface ServiceInfo {
   title: string;
-  image: string;
+  image: ImageLike;
   description: string[];
   features: string[];
 }
 
-const serviceData: Record<string, ServiceInfo> = {
+export const serviceData: Record<string, ServiceInfo> = {
   "balcony": {
     title: "Balcony Safety Nets in Bangalore",
     image: balconyNets,
@@ -365,8 +367,11 @@ const serviceData: Record<string, ServiceInfo> = {
   },
 };
 
-const ServiceDetail = () => {
-  const { type } = useParams<{ type: string }>();
+interface ServiceDetailProps {
+  type?: string;
+}
+
+const ServiceDetail = ({ type }: ServiceDetailProps) => {
   const service = serviceData[type || ""] || serviceData["balcony"];
 
   return (
@@ -380,12 +385,34 @@ const ServiceDetail = () => {
 
       <section className="py-16 bg-background">
         <div className="container max-w-5xl">
+          <div className="mb-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+            <div className="rounded-2xl border border-border bg-card p-4">
+              <Phone className="mb-2 h-7 w-7 text-primary" />
+              <p className="font-heading text-lg font-bold text-foreground">Direct Phone Support</p>
+              <p className="text-sm text-muted-foreground">Talk to us directly for pricing and installation details.</p>
+            </div>
+            <div className="rounded-2xl border border-border bg-card p-4">
+              <Clock3 className="mb-2 h-7 w-7 text-primary" />
+              <p className="font-heading text-lg font-bold text-foreground">Fast Quote</p>
+              <p className="text-sm text-muted-foreground">Great for urgent residential and commercial requirements.</p>
+            </div>
+            <div className="rounded-2xl border border-border bg-card p-4">
+              <MapPin className="mb-2 h-7 w-7 text-primary" />
+              <p className="font-heading text-lg font-bold text-foreground">Bangalore Coverage</p>
+              <p className="text-sm text-muted-foreground">Local support with service across Bangalore areas.</p>
+            </div>
+            <div className="rounded-2xl border border-border bg-card p-4">
+              <BadgeCheck className="mb-2 h-7 w-7 text-primary" />
+              <p className="font-heading text-lg font-bold text-foreground">Free Site Visit</p>
+              <p className="text-sm text-muted-foreground">Call first to confirm site inspection and availability.</p>
+            </div>
+          </div>
           <div className="grid md:grid-cols-2 gap-12 items-start">
             <div>
-              <img src={service.image} alt={service.title} className="w-full h-80 object-cover rounded-lg shadow-xl" />
+              <img src={toImageSrc(service.image)} alt={service.title} className="w-full h-80 object-cover rounded-lg shadow-xl" />
               <div className="mt-6 bg-primary text-primary-foreground p-6 rounded-lg">
                 <h3 className="font-heading font-bold text-xl mb-4">Key Features</h3>
-                <ul className="grid grid-cols-2 gap-2">
+                <ul className="grid gap-2 sm:grid-cols-2">
                   {service.features.map((f) => (
                     <li key={f} className="flex items-center gap-2 text-sm">
                       <span className="text-cta">✓</span> {f}
@@ -400,9 +427,29 @@ const ServiceDetail = () => {
               ))}
               <div className="bg-muted p-6 rounded-lg mt-6">
                 <h3 className="font-heading font-bold text-xl text-primary mb-4">Get Free Quote</h3>
-                <p className="text-muted-foreground mb-4">Contact us today for a free site inspection and installation quote.</p>
+                <p className="text-muted-foreground mb-4">
+                  Call us for a fast estimate, free site inspection, and installation guidance for this service.
+                </p>
                 <div className="space-y-3">
-                  <a href="tel:7795891177" className="cta-button block text-center">Call Now: +91 7795891177</a>
+                  <a
+                    href={`tel:${BUSINESS_PHONE}`}
+                    onClick={() => trackLeadClick("call", `service_detail_${type || "balcony"}`)}
+                    className="cta-button block text-center"
+                  >
+                    Call Now: +91 {BUSINESS_PHONE}
+                  </a>
+                  <a
+                    href={WHATSAPP_URL}
+                    target="_blank"
+                    rel="noreferrer"
+                    onClick={() => trackLeadClick("whatsapp", `service_detail_${type || "balcony"}`)}
+                    className="block rounded-lg bg-[#25D366] px-4 py-3 text-center font-semibold text-white transition-colors hover:bg-[#1ebe5a]"
+                  >
+                    <span className="inline-flex items-center gap-2">
+                      <MessageCircleMore className="h-4 w-4" />
+                      WhatsApp For Fast Quote
+                    </span>
+                  </a>
                   <a href="mailto:vickysafetynets552@gmail.com" className="block text-center bg-primary text-primary-foreground px-4 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
                     Email Us
                   </a>

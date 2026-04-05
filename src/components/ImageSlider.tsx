@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { toImageSrc } from "@/lib/image";
 
 import balconyNets from "@/assets/balcony-nets.jpg";
 import balconySafetyNew from "@/assets/balcony-safety-new.jpg";
@@ -75,7 +76,7 @@ const ImageSlider = () => {
             {visible.map((img, i) => (
               <div key={img.index} className="relative overflow-hidden rounded-lg shadow-lg group aspect-[4/3]">
                 <img
-                  src={img.src}
+                  src={toImageSrc(img.src)}
                   alt={img.label}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
@@ -90,7 +91,7 @@ const ImageSlider = () => {
           {/* Mobile: 1 image */}
           <div className="md:hidden relative overflow-hidden rounded-lg shadow-lg aspect-[4/3]">
             <img
-              src={allImages[current].src}
+              src={toImageSrc(allImages[current].src)}
               alt={allImages[current].label}
               className="w-full h-full object-cover"
             />

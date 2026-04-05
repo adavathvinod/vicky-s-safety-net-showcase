@@ -1,3 +1,3 @@
-# Welcome to your Lovable project
+# Vicky Safety Nets Showcase
 
-TODO: Document your project here
+Astro + React project for the Vicky Safety Nets website.

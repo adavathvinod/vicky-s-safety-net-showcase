@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import ParallaxSection from "@/components/ParallaxSection";
 import EnquiryBar from "@/components/EnquiryBar";
+import { toImageSrc } from "@/lib/image";
 
 import parallaxBg from "@/assets/parallax-bg.jpg";
 import balconyNets from "@/assets/balcony-nets.jpg";
@@ -44,7 +45,7 @@ const Gallery = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {images.map((img, i) => (
               <div key={i} className="group relative overflow-hidden rounded-lg shadow-lg">
-                <img src={img.src} alt={img.title} loading="lazy" className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110" />
+                <img src={toImageSrc(img.src)} alt={img.title} loading="lazy" className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/60 transition-all duration-300 flex items-end">
                   <p className="text-background font-heading font-semibold p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
                     {img.title}

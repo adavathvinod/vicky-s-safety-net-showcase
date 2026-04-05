@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
 import { Star, Phone } from "lucide-react";
+import { toImageSrc, type ImageLike } from "@/lib/image";
 
 interface ServiceCardProps {
-  image: string;
+  image: ImageLike;
   title: string;
   path: string;
 }
@@ -10,11 +10,11 @@ interface ServiceCardProps {
 const ServiceCard = ({ image, title, path }: ServiceCardProps) => {
   return (
     <div className="service-card bg-card">
-      <Link to={path} className="block">
+      <a href={path} className="block">
         <div className="aspect-square overflow-hidden border-4 border-secondary rounded-lg">
-          <img src={image} alt={title} loading="lazy" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+          <img src={toImageSrc(image)} alt={title} loading="lazy" className="w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
         </div>
-      </Link>
+      </a>
       <div className="p-3 text-center">
         <h3 className="font-heading font-semibold text-sm mb-1">{title}</h3>
         <div className="flex justify-center gap-0.5 text-cta mb-2">

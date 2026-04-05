@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import ServiceCard from "@/components/ServiceCard";
 import ParallaxSection from "@/components/ParallaxSection";
 import EnquiryBar from "@/components/EnquiryBar";
+import { toImageSrc } from "@/lib/image";
 
 import parallaxBg from "@/assets/parallax-bg.jpg";
 import cricketNets from "@/assets/cricket-nets.jpg";
@@ -53,7 +54,7 @@ const AllSportsNets = () => {
           <div className="space-y-8">
             {services.map((s) => (
               <div key={s.title} className="bg-card rounded-lg p-6 shadow-md flex flex-col md:flex-row gap-6 items-center">
-                <img src={s.image} alt={s.title} loading="lazy" className="w-full md:w-48 h-36 object-cover rounded-lg" />
+                <img src={toImageSrc(s.image)} alt={s.title} loading="lazy" className="w-full md:w-48 h-36 object-cover rounded-lg" />
                 <div>
                   <h3 className="font-heading font-bold text-xl text-primary mb-2">{s.title}</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>

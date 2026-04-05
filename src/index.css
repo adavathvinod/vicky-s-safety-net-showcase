@@ -46,6 +46,9 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   * {
     @apply border-border;
   }
@@ -107,5 +110,8 @@
   .section-subtitle {
     @apply text-center text-lg mt-2;
     color: hsl(var(--muted-foreground));
+  }
+  .pause-on-hover:hover {
+    animation-play-state: paused;
   }
 }

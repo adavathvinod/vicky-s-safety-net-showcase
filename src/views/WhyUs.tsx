@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import WhyUsFeatures from "@/components/WhyUsFeatures";
 import ParallaxSection from "@/components/ParallaxSection";
 import EnquiryBar from "@/components/EnquiryBar";
+import { toImageSrc } from "@/lib/image";
 
 import parallaxBg from "@/assets/parallax-bg.jpg";
 import balconyNets from "@/assets/balcony-nets.jpg";
@@ -33,7 +34,7 @@ const WhyUs = () => {
               </p>
             </div>
             <div className="rounded-lg overflow-hidden shadow-xl">
-              <img src={balconyNets} alt="Balcony Safety Net Installation" loading="lazy" className="w-full h-80 object-cover" />
+              <img src={toImageSrc(balconyNets)} alt="Balcony Safety Net Installation" loading="lazy" className="w-full h-80 object-cover" />
             </div>
           </div>
 
@@ -41,7 +42,7 @@ const WhyUs = () => {
 
           <div className="grid md:grid-cols-2 gap-12 items-center mt-16">
             <div className="rounded-lg overflow-hidden shadow-xl order-2 md:order-1">
-              <img src={buildingNets} alt="Building Safety Nets" loading="lazy" className="w-full h-80 object-cover" />
+              <img src={toImageSrc(buildingNets)} alt="Building Safety Nets" loading="lazy" className="w-full h-80 object-cover" />
             </div>
             <div className="order-1 md:order-2">
               <h2 className="text-3xl font-heading font-bold text-primary mb-6">Our Mission</h2>

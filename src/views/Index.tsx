@@ -13,10 +13,14 @@ import pigeonNets from "@/assets/pigeon-nets.jpg";
 import cricketNets from "@/assets/cricket-nets.jpg";
 import buildingNets from "@/assets/building-nets.jpg";
 import industrialNets from "@/assets/industrial-nets.jpg";
+import industrialSafetyNew from "@/assets/industrial-safety-new.jpg";
 import staircaseNets from "@/assets/staircase-nets.jpg";
 import staircaseNetsNew from "@/assets/staircase-nets-new.jpg";
 import openAreaSafety from "@/assets/open-area-safety.jpg";
 import coconutNets from "@/assets/coconut-nets.jpg";
+import kidsSafetyNew from "@/assets/kids-safety-new.jpg";
+import petsSafetyNew from "@/assets/pets-safety-new.jpg";
+import monkeyNetsNew from "@/assets/monkey-nets-new.jpg";
 import parallaxBg from "@/assets/parallax-bg.jpg";
 import parallaxBg2 from "@/assets/parallax-bg2.jpg";
 
@@ -68,21 +72,21 @@ const featuredSafetyNetServices = [
       "Protect your property from pesky pigeons with our premium pigeon nets. Designed to deter birds while maintaining aesthetic appeal, our nets are durable, weather-resistant, and easy to install. Keep your premises clean and safe with our effective pigeon net solutions.",
   },
   {
-    image: balconyNets,
+    image: kidsSafetyNew,
     title: "Kids Net For Balcony",
     path: "/safety-nets/kids",
     description:
       "Create a secure play area for your little ones with our kids' nets for balconies. Made with child safety in mind, our nets offer a protective barrier without compromising on visibility. Easy to install and customize, they provide peace of mind while your children enjoy the outdoors.",
   },
   {
-    image: pigeonNets,
+    image: kidsSafetyNew,
     title: "Pets Safety Nets",
     path: "/safety-nets/pets",
     description:
       "Ensure the safety of your beloved pets with our reliable pet safety nets. Designed to create a secure environment for your furry friends, our nets are durable, non-toxic, and easy to install. Keep your pets protected from while allowing them to enjoy the outdoors.",
   },
   {
-    image: industrialNets,
+    image: industrialSafetyNew,
     title: "Industrial Safety Nets",
     path: "/safety-nets/industrial",
     description:
@@ -96,7 +100,7 @@ const featuredSafetyNetServices = [
       "Elevate your cricket training with our top-notch cricket practice nets. Crafted for durability and optimal performance, our nets provide a safe and controlled environment for players to hone their skills. Easy to set up and maintain, these nets are essential for every cricket enthusiast.",
   },
   {
-    image: balconyNets,
+    image: monkeyNetsNew,
     title: "Monkey Net For Balconies",
     path: "/safety-nets/monkey",
     description:

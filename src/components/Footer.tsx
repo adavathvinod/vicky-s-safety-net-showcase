@@ -103,6 +103,17 @@ const Footer = () => {
                 <span className="text-sm">vickysafetynets552@gmail.com</span>
               </a>
             </div>
+            <div className="mt-4 rounded overflow-hidden shadow-md">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.1!2d77.5833!3d13.0267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMuthyalanagar%2C%20Bangalore!5e0!3m2!1sen!2sin!4v1"
+                width="100%"
+                height="150"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                title="Vicky Safety Nets Location"
+              />
+            </div>
           </div>
         </div>
       </div>

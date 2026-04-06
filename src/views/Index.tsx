@@ -84,7 +84,7 @@ const featuredSafetyNetServices = [
       "Create a secure play area for your little ones with our kids' nets for balconies. Made with child safety in mind, our nets offer a protective barrier without compromising on visibility. Easy to install and customize, they provide peace of mind while your children enjoy the outdoors.",
   },
   {
-    image: kidsSafetyNew,
+    image: petsSafetyNew,
     title: "Pets Safety Nets",
     path: "/safety-nets/pets",
     description:

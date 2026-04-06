@@ -30,7 +30,7 @@ const services = [
   { image: cricketNets, title: "Cricket Nets", path: "/sports-nets/cricket" },
   { image: buildingNets, title: "Building Nets", path: "/safety-nets/building" },
   { image: industrialNets, title: "Industrial Nets", path: "/safety-nets/industrial" },
-  { image: staircaseNets, title: "Staircase Nets", path: "/safety-nets/staircase" },
+  { image: staircaseNetsNew, title: "Staircase Nets", path: "/safety-nets/staircase" },
 ];
 
 const leadHighlights = [

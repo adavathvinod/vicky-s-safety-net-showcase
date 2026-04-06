@@ -22,8 +22,8 @@ import kidsSafetyNew from "@/assets/kids-safety-new.jpg";
 import petsSafetyNew from "@/assets/pets-safety-new.jpg";
 import monkeyNetsNew from "@/assets/monkey-nets-new.jpg";
 import grillBalconyNew from "@/assets/grill-balcony-new.jpg";
-import heroBalconyHanger from "@/assets/hero-balcony-hanger.jpg";
-import heroInvisibleGrilles from "@/assets/hero-invisible-grilles.jpg";
+import heroBalconyHanger from "@/assets/hero-balcony-hanger.jpeg";
+import heroInvisibleGrilles from "@/assets/hero-invisible-grilles.jpeg";
 import parallaxBg from "@/assets/parallax-bg.jpg";
 import parallaxBg2 from "@/assets/parallax-bg2.jpg";
 

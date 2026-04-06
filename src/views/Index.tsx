@@ -21,6 +21,9 @@ import coconutNets from "@/assets/coconut-nets.jpg";
 import kidsSafetyNew from "@/assets/kids-safety-new.jpg";
 import petsSafetyNew from "@/assets/pets-safety-new.jpg";
 import monkeyNetsNew from "@/assets/monkey-nets-new.jpg";
+import grillBalconyNew from "@/assets/grill-balcony-new.jpg";
+import heroBalconyHanger from "@/assets/hero-balcony-hanger.jpg";
+import heroInvisibleGrilles from "@/assets/hero-invisible-grilles.jpg";
 import parallaxBg from "@/assets/parallax-bg.jpg";
 import parallaxBg2 from "@/assets/parallax-bg2.jpg";
 
@@ -31,6 +34,8 @@ const services = [
   { image: buildingNets, title: "Building Nets", path: "/safety-nets/building" },
   { image: industrialNets, title: "Industrial Nets", path: "/safety-nets/industrial" },
   { image: staircaseNetsNew, title: "Staircase Nets", path: "/safety-nets/staircase" },
+  { image: heroInvisibleGrilles, title: "Invisible Grilles", path: "/safety-nets/grill-balcony" },
+  { image: heroBalconyHanger, title: "Balcony Hanger", path: "/safety-nets/building" },
 ];
 
 const leadHighlights = [
@@ -195,7 +200,7 @@ const Index = () => {
         <div className="container">
           <h2 className="section-title mb-2">OUR SERVICES</h2>
           <p className="section-subtitle mb-10">Professional Safety Net Installation in Bangalore</p>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {services.map((s) => (
               <ServiceCard key={s.title} {...s} />
             ))}

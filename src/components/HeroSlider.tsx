@@ -15,8 +15,8 @@ const slides = [
   { image: balconyNets, title: "Children Safety Nets", subtitle: "Keep Your Kids Safe at Home" },
   { image: pigeonNets, title: "Pigeon Protection Nets", subtitle: "Stop Birds from Entering Your Balcony" },
   { image: cricketNets, title: "Cricket Practice Nets", subtitle: "Terrace & Ground Cricket Nets" },
-  { image: buildingNets, title: "Balcony Hanger", subtitle: "Secure Storage Solution for Your Balcony" },
-  { image: grillBalconyNew, title: "Invisible Grilles", subtitle: "Transparent Safety Without Obstruction" },
+  { image: heroBalconyHanger, title: "Balcony Hanger", subtitle: "Secure Storage Solution for Your Balcony" },
+  { image: heroInvisibleGrilles, title: "Invisible Grilles", subtitle: "Transparent Safety Without Obstruction" },
 ];
 
 const HeroSlider = () => {

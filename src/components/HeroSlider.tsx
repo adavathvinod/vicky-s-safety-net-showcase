@@ -7,16 +7,16 @@ import heroBg from "@/assets/hero-bg.jpg";
 import balconyNets from "@/assets/balcony-nets.jpg";
 import pigeonNets from "@/assets/pigeon-nets.jpg";
 import cricketNets from "@/assets/cricket-nets.jpg";
-import buildingNets from "@/assets/building-nets.jpg";
-import grillBalconyNew from "@/assets/grill-balcony-new.jpg";
+import heroBalconyHanger from "@/assets/hero-balcony-hanger.jpg";
+import heroInvisibleGrilles from "@/assets/hero-invisible-grilles.jpg";
 
 const slides = [
   { image: heroBg, title: "Balcony Safety Nets", subtitle: "Professional Installation in Bangalore" },
   { image: balconyNets, title: "Children Safety Nets", subtitle: "Keep Your Kids Safe at Home" },
   { image: pigeonNets, title: "Pigeon Protection Nets", subtitle: "Stop Birds from Entering Your Balcony" },
   { image: cricketNets, title: "Cricket Practice Nets", subtitle: "Terrace & Ground Cricket Nets" },
-  { image: buildingNets, title: "Balcony Hanger", subtitle: "Secure Storage Solution for Your Balcony" },
-  { image: grillBalconyNew, title: "Invisible Grilles", subtitle: "Transparent Safety Without Obstruction" },
+  { image: heroBalconyHanger, title: "Balcony Hanger", subtitle: "Secure Storage Solution for Your Balcony" },
+  { image: heroInvisibleGrilles, title: "Invisible Grilles", subtitle: "Transparent Safety Without Obstruction" },
 ];
 
 const HeroSlider = () => {
